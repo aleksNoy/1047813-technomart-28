@@ -10,7 +10,7 @@
     <header>
       <!--ВЕРХ ШАПКИ-->
       <div class="header-top">
-        <a>
+        <a href="index.html">
           <img src="img/full-logo.svg" width="220px" height="47px" alt="ТЕХНОМАРТ" />
           <!--ДОРАБОТАЕТСЯ CSS-->
         </a>
@@ -42,7 +42,7 @@
 
       <p>
         <img src="img/icon-phone.svg" width="18px" height="19px">
-        <a>+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <a href="#">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
 
       <!--ПОЛЬЗОВАТЕЛЬ-->
@@ -66,7 +66,7 @@
       <nav>
         <ul>
           <li>
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li>
             <a href="#">Компания</a>
@@ -117,8 +117,47 @@
         <!--ФИЛЬТР-->
         <div class="filtr">
           <h3>Фильтр:</h3>
-          <!--ЗДЕСЬ БУДЕТ ФОРМА-->
-          <form action=""></form>
+          
+          <form action="https://echo.htmlacademy.ru" method="GET">
+          
+            <fieldset>
+
+              <legend>Производители:</legend>
+
+              <label>
+                <input type="checkbox" name="BOSCH" checked>BOSCH
+              </label>
+              <label>
+                <input type="checkbox" name="Интерскол">Интерскол
+              </label>
+              <label>
+                <input type="checkbox" name="Makita" checked>Makita
+              </label>
+              <label>
+                <input type="checkbox" name="Dewalt">Dewalt
+              </label>
+              <label>
+                <input type="checkbox" name="Hitachi">Hitachi
+              </label>
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Питание:</legend>
+
+              <label>
+                <input type="radio" name="power" value="battery" checked>Аккумуляторные
+              </label>
+
+              <label>
+                <input type="radio" name="power" value="mains">Сетевые
+              </label>
+
+            </fieldset>
+            
+            <button type="submit">показать</button>
+          </form>
         </div>
 
         <!--РЕЗУЛЬТАТ ВЫВОДА-->
@@ -348,7 +387,7 @@
       <div class="footer-top">
         <!--КОНТАКТЫ-->
         <div>
-          <a>
+          <a href="index.html">
             <img src="img/full-logo.svg" width="220px" height="68px" alt="ТЕХНОМАРТ"/>
           </a>
 
@@ -432,5 +471,24 @@
         </div>
       </div>
     </footer>
+
+    <!--ОКНО КАРЗИНЫ-->
+    <div class="popup-cart">
+      <button type="button">
+        <img src="img/icon-close.svg" width="21px" height="21px" alt="закрыть окно">
+      </button>
+
+        <p>
+          <img src="img/icon-cart-mark.svg" width="66px" height="66px">
+         <span> Товар добавлен в корзину!</span>
+        </p>
+
+        <div class="popup-cart-button">
+          <a href="#">оформить заказ</a>
+          <button type="button">продолжить покупки</button>
+        </div>
+      
+    </div>
+
   </body>
 </html>
