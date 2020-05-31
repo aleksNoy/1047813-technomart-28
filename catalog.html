@@ -17,17 +17,17 @@
         
         <form action="https://echo.htmlacademy.ru" method="GET">
           <label class="search-product">
-            <img src="img/icon-search.svg" width="17px" height="17px"> 
+            <img src="img/icon-search.svg" width="17px" height="17px" alt="поиск"> 
             <input type="search" name="search-product" placeholder="Поиск:">
           </label>
         </form>
 
         <ul>
           <li>
-            <a href="#"><img src="img/icon-mark.svg" width="14px" height="16px"> закладки:</a>
+            <a href="#"><img src="img/icon-mark.svg" width="14px" height="16px" alt="закладки"> закладки:</a>
           </li>
           <li>
-            <a href="#"><img src="img/icon-cart.svg" width="15px" height="15px">корзина:</a>
+            <a href="#"><img src="img/icon-cart.svg" width="15px" height="15px" alt="корзина">корзина:</a>
           </li>
           <li>
             <a href="#">оформить заказ</a>
@@ -41,7 +41,7 @@
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
       <p>
-        <img src="img/icon-phone.svg" width="18px" height="19px">
+        <img src="img/icon-phone.svg" width="18px" height="19px" alt="позвонить">
         <a href="#">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
 
@@ -49,8 +49,8 @@
       <div class="user">
        <div class="user-top">
          <a href="">
-           <img src="img/icon-user.svg" width="20px" height="18px">
-           <span>Арбузов Дмитрий</span>
+           <img src="img/icon-user.svg" width="20px" height="18px" alt="профиль">
+           <span>Равшан Джамшутович</span>
          </a>
          <a href="#"><img src="img/icon-logout.svg" width="20px" height="17px" alt="выход"></a>
        </div>
@@ -116,11 +116,19 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товара</h2>
         <!--ФИЛЬТР-->
-        <div class="filtr">
+        <div class="filter">
           <h3>Фильтр:</h3>
           
           <form action="https://echo.htmlacademy.ru" method="GET">
-          
+
+            <!--ЦЕНОВОЙ ДИАПОЗОН-->
+            <fieldset>
+
+              <legend>Цена:</legend>
+            <!--ДОБАВИТСЯ РЕГУЛИРОВКА ЦЕНЫ-->
+            </fieldset>
+
+          <!--ПЕРЕЧЕНЬ ПРОИЗВОДИТЕЛЕЙ-->
             <fieldset>
 
               <legend>Производители:</legend>
@@ -143,6 +151,7 @@
 
             </fieldset>
 
+            <!--ОСОБЕНОСТЬ-->
             <fieldset>
 
               <legend>Питание:</legend>
@@ -366,7 +375,7 @@
       </section>
 
       <!--ИНФОРМАЦИЯ-->
-      <section>
+      <section class="few-words">
 
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -446,13 +455,13 @@
         <!--СОЦСЕТИ-->
         <ul>
           <li>
-            <a href="#"><img src="img/icon-vk.svg" width="44px" height="44px" alt="ВКонтакте"></a>
+            <a href="#"><img src="img/icon-vk.svg" width="25px" height="14px" alt="ВКонтакте"></a>
           </li>
           <li>
-            <a href="#"><img src="img/icon-facebook.svg" width="44px" height="44px" alt="Фейсбук"></a>
+            <a href="#"><img src="img/icon-fb.svg" width="12px" height="22px" alt="Фейсбук"></a>
           </li>
           <li>
-            <a href="#"><img src="img/icon-instagram.svg" width="44px" height="44px" alt="Инстаграм"></a>
+            <a href="#"><img src="img/icon-insta.svg" width="21px" height="21px" alt="Инстаграм"></a>
           </li>
         </ul>
 
@@ -480,7 +489,7 @@
       </button>
 
         <p>
-          <img src="img/icon-cart-mark.svg" width="66px" height="66px">
+          <img src="img/icon-cart-mark.svg" width="66px" height="66px" alt="готово">
          <span> Товар добавлен в корзину!</span>
         </p>
 
