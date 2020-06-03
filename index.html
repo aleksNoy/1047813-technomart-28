@@ -3,25 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="fonts/"></link>
+    <link rel="stylesheet" href="css/normalize.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
     <!--ШАПКА-->
 
     <header>
       <!--ВЕРХ ШАПКИ-->
-      <div class="header-top">
-        <a>
+      <div class="header-top-block">
+
+       <div class="header-top">
+        <a class="logo-link">
           <img src="img/logo-header.svg" width="220px" height="47px" alt="ТЕХНОМАРТ"/>
         </a>
-        
+
         <form action="https://echo.htmlacademy.ru" method="GET">
           <label class="search-product">
-            <img src="img/icon-search.svg" width="17px" height="17px" alt="поиск"> 
+            <img src="img/icon-search.svg" width="17px" height="17px" alt="поиск">
             <input type="search" name="search-product" placeholder="Поиск:">
           </label>
         </form>
 
-        <ul>
+        <ul class="custom-function">
           <li>
             <a href="#"><img src="img/icon-mark.svg" width="14px" height="16px" alt="закладки"> закладки:</a>
           </li>
@@ -32,6 +37,8 @@
             <a href="#">оформить заказ</a>
           </li>
         </ul>
+       </div>
+
       </div>
 
       <!--СРЕДНЯЯ ЧАСТЬ-->
@@ -42,7 +49,7 @@
 
         <p>
           <img src="img/icon-phone.svg" width="18px" height="19px" alt="позвонить">
-          <a href="#">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <a href="tel:+7(812)5550555">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <ul>
           <li>
@@ -55,7 +62,7 @@
       </div>
 
       <!--НИЗ ШАПКИ-->
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -112,24 +119,24 @@
         <!--НИЖНИЙ РЯД-->
         <div class="slider">
           <ul>
-            <li>
+            <li class="first-slider">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
               <img src="img/slider-hammer.jpg" width="620" height="266" alt="перфораторы" />
 
               <button class="button-back" type="button"><img src="img/slaider-left.svg" width="21" height="39" alt="назад"></button>
               <button class="button-forward" type="button"><img src="img/slaider-right.svg" width="21" height="39" alt="вперед"></button>
-              
+
               <a href="catalog.html">Открыть каталог</a>
             </li>
-            <li>
+            <li class="second-slider">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
               <img src="img/slider-drill.jpg" width="620" height="266" alt="дрели" />
 
               <button class="button-back" type="button"><img src="img/slaider-left.svg" width="21" height="39" alt="назад"></button>
               <button class="button-forward" type="button"><img src="img/slaider-right.svg" width="21" height="39" alt="вперед"></button>
-              
+
               <a href="#">Открыть каталог</a>
             </li>
           </ul>
@@ -179,7 +186,8 @@
                   <a href="#">25500</a>
                 </p>
               </div>
-            </li><li>
+            </li>
+            <li>
               <!--ШАПКА КАРТОЧКИ-->
               <div class="product-header">
                 <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -196,7 +204,8 @@
                   <a href="#">15500</a>
                 </p>
               </div>
-            </li><li>
+            </li>
+            <li>
               <!--ШАПКА КАРТОЧКИ-->
               <div class="product-header">
                 <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -213,7 +222,8 @@
                   <a href="#">25500</a>
                 </p>
               </div>
-            </li><li>
+            </li>
+            <li>
               <!--ШАПКА КАРТОЧКИ-->
               <div class="product-header">
                 <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -399,7 +409,7 @@
         </div>
 
         <!--НАВИГАЦИЯ-->
-        <nav>
+        <nav class="footer-nav">
           <!--ВЕРХНИЙ РЯД-->
           <ul class="top-list">
             <li>
@@ -444,7 +454,10 @@
         <p><span>© 2010–2019 Компания «Техномарт»</span>Все права защищены</p>
 
         <!--СОЦСЕТИ-->
-        <ul>
+        
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+
+        <ul class="social">
           <li>
             <a href="#"><img src="img/icon-vk.svg" width="25px" height="14px" alt="ВКонтакте"></a>
           </li>
@@ -457,6 +470,7 @@
         </ul>
 
         <!--ИНФОРМАЦИЯ-->
+
         <div class="footer-info">
           <p>
             Обратная связь:
@@ -475,6 +489,7 @@
     <!--НАПИШИТЕ НАМ-->
 
     <div class="write-us">
+
       <form action="https://echo.htmlacademy.ru" method="POST">
 
         <!--КНОПКА ЗАКРЫТИЯ-->

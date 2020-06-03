@@ -3,20 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="fonts/"></link>
+    <link rel="stylesheet" href="css/normalize.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
     <!--ШАПКА-->
 
     <header>
       <!--ВЕРХ ШАПКИ-->
-      <div class="header-top">
+      <div class="header-top-block">
+
+       <div class="header-top">
         <a href="index.html">
           <img src="img/logo-header.svg" width="220px" height="47px" alt="ТЕХНОМАРТ" />
         </a>
-        
+
         <form action="https://echo.htmlacademy.ru" method="GET">
           <label class="search-product">
-            <img src="img/icon-search.svg" width="17px" height="17px" alt="поиск"> 
+            <img src="img/icon-search.svg" width="17px" height="17px" alt="поиск">
             <input type="search" name="search-product" placeholder="Поиск:">
           </label>
         </form>
@@ -32,37 +37,40 @@
             <a href="#">оформить заказ</a>
           </li>
         </ul>
+       </div>
+
       </div>
 
       <!--СРЕДНЯЯ ЧАСТЬ-->
       <div class="header-middle">
 
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
-      <p>
-        <img src="img/icon-phone.svg" width="18px" height="19px" alt="позвонить">
-        <a href="#">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
+        <p>
+          <img src="img/icon-phone.svg" width="18px" height="19px" alt="позвонить">
+          <a href="#">+7 (812) 555-05-55г.</a> Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
 
       <!--ПОЛЬЗОВАТЕЛЬ-->
-      <div class="user">
-       <div class="user-top">
-         <a href="">
-           <img src="img/icon-user.svg" width="20px" height="18px" alt="профиль">
-           <span>Равшан Джамшутович</span>
-         </a>
-         <a href="#"><img src="img/icon-logout.svg" width="20px" height="17px" alt="выход"></a>
-       </div>
+        <div class="user">
+         <div class="user-top">
+          <a href="#">
+            <img src="img/icon-user.svg" width="20px" height="18px" alt="профиль">
+            <span>Равшан Джамшутович</span>
+          </a>
+           <a href="#"><img src="img/icon-logout.svg" width="20px" height="17px" alt="выход"></a>
+         </div>
 
-       <ul>
-         <li><a href="#">Мои заказы</a></li>
-         <li><a href="#">Личный кабинет</a></li>
-       </ul>
+        <ul class="user-area">
+          <li><a href="#">Мои заказы</a></li>
+           <li><a href="#">Личный кабинет</a></li>
+         </ul>
+
       </div>
     </div>
 
       <!--НИЗ ШАПКИ-->
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -117,7 +125,7 @@
         <!--ФИЛЬТР-->
         <div class="filter">
           <h3>Фильтр:</h3>
-          
+
           <form action="https://echo.htmlacademy.ru" method="GET">
 
             <!--ЦЕНОВОЙ ДИАПОЗОН-->
@@ -164,7 +172,7 @@
               </label>
 
             </fieldset>
-            
+
             <button type="submit">показать</button>
           </form>
         </div>
@@ -229,7 +237,7 @@
              </li>
 
              <li>
-               <!--ШАПКА КАРТОЧКИ-->
+                 <!--ШАПКА КАРТОЧКИ-->
                <div class="product-header">
                  <img src="img/BOSCH-BFG-6000.jpg" width="144px" height="128px" alt="Перфоратор BOSCH BFG 6000">
                  <ul class="product-action">
@@ -380,7 +388,7 @@
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для
            сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные
-           модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+           модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
            совмещены отбойный молоток и ударная дрель.</p>
 
@@ -407,7 +415,7 @@
         </div>
 
         <!--НАВИГАЦИЯ-->
-        <nav>
+        <nav class="footer-nav">
           <!--ВЕРХНИЙ РЯД-->
           <ul class="top-list">
             <li>
@@ -452,7 +460,9 @@
         <p><span>© 2010–2019 Компания «Техномарт»</span>Все права защищены</p>
 
         <!--СОЦСЕТИ-->
-        <ul>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+
+        <ul class="social">
           <li>
             <a href="#"><img src="img/icon-vk.svg" width="25px" height="14px" alt="ВКонтакте"></a>
           </li>
@@ -496,7 +506,7 @@
           <a href="#">оформить заказ</a>
           <button type="button">продолжить покупки</button>
         </div>
-      
+
     </div>
 
   </body>
