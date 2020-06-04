@@ -1,0 +1,81 @@
+:root {
+	--basic-red: #ee3643;
+	--basic-green: #63a63e;
+	--basic-grey: #3d546f;
+	--basic-greylight: #c5c5c5;
+	--basic-background: #f1f5f7;
+	--basic-wight: #ffffff;
+	--basic-black: #000000;
+
+	--special-yellow: #ffbf47;
+	--special-blue: #3bbce3;
+	--special-lilac: #dc91d8;
+	--special-grey: #32425c;
+	--special-greylight: #eaeaea;
+	--special-grey-middle: #293449;
+	--special-grey-dark: #161d29;
+	--special-green-dark: #518534;
+	--special-greenlight: #8ed78f;
+	--special-yellowlight: #ffd180;
+
+
+	--success: #5fbb2d;
+	--warning: #ffbf47;
+	--error: #ba2732;
+}
+
+body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-family: Cuprum, Arial, sans-serif;
+	background-color: var(--basic-background);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+/* ВЕРХ ШАПКИ */
+
+.header-top-block {
+	background-color: var(--special-grey-middle);
+}
+
+.header-top {
+	font-size: 18px;
+	line-height: 24px;
+}	
+
+.header-top a {
+	color: var(--basic-wight);
+}
+
+.checkout {
+	background-color: var(--basic-green);
+}
+
+.custom-function img, 
+.search-product img {
+	opacity: 0.3;
+}
+
+.custom-function a:hover, 
+.custom-function a:focus,
+.search-product a:hover, 
+.search-product a:focus {
+	color: var(--basic-wight);
+}
+
+.custom-function :active {
+	opacity: 0.5;
+}
